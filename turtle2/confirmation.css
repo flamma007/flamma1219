@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cover-page {
+    background-color: #054A91;
+    padding: 20px;
+    color: whitesmoke;
+  }.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.subheading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.confirmation-message {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hikkaduwa Turtle Hatchery - Buy Tickets</title>
+  <link rel="stylesheet" href="cpurchase.css">
+  
+</head>
+<body >
+  <div class="cover-page">
+    <h1>Buy Tickets</h1>
+  </div>
+  <div class="container">
+    <h1>Enter Your Details</h1>
+    <form id="userForm">
+        <div class="form-group">
+            <label for="fullName">Full Name*</label>
+            <input type="text" id="fullName" required>
+            <span id="fullNameError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number*</label>
+            <select id="countryCode" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <!-- Add more country codes as needed -->
+            </select>
+            <input type="text" id="mobileNumber" required>
+            <span id="mobileNumberError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" required>
+            <span id="emailError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="confirmEmail">Confirm Email*</label>
+            <input type="email" id="confirmEmail" required>
+            <span id="confirmEmailError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <button type="submit" id="submitButton" disabled>Continue with purchase</button>
+    </form>
+    </div>
+    <script src="cpscript.js"></script>
+
+  </div>
+  </body>
+  </html>

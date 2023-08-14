@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #DBE4EE;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.cover-page {
+  background-color: #054A91;
+  padding: 20px;
+  color: whitesmoke;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 1100px;
+  margin: 40px auto;
+}
+a{
+  color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width:fit-content;
+  padding: 10px;
+  background-color: #E8871E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #EDB458;
+  border: 1px solid #EDB458;
+  border-radius: 25px;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 5px;
+}
+
+.quantity-control:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-control:active {
+  background-color: #d0d0d0;
+}
+
+/* Styles for the quantity spans */
+span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+#timeSlotSelection {
+  margin: 20px 0;
+}
+
+#pricingTable {
+  margin: 20px auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#summaryTable {
+  width: 600px; /* Set the width of the summary table as desired */
+}
+
+.summary-table table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.summary-table th, .summary-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.summary-table th {
+  background-color: #f2f2f2;
+}

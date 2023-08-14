@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hikkaduwa Turtle Hatchery - Buy Tickets</title>
+  <link rel="stylesheet" href="tickets.css">
+</head>
+<body>
+  <div class="cover-page">
+    <a href="hikkaduwa.html">Home</a>
+    <h1>Buy Tickets</h1>
+  </div>
+  <div class="container">
+    <div>
+      <form class="form">
+        <!-- Dates Section -->
+        <div class="section">
+          <label for="visitDate">Select a date for your visit:</label>
+          <input type="date" id="visitDate" name="visitDate" required>
+        </div>
+
+        <!-- Guests Section -->
+        <div class="section2" id="bookingForm">
+          <label for="slAdult">SL Adult:</label>
+          <div class="quantity-container">
+            <div class="quantity-control" onclick="changeQuantity('slAdultQty', 1)">+</div>
+            <span id="slAdultQty">0</span>
+            <div class="quantity-control" onclick="changeQuantity('slAdultQty', -1)">-</div>
+          </div>
+          
+          <label for="slChild">SL Child:</label>
+          <div class="quantity-container">
+            <div class="quantity-control" onclick="changeQuantity('slChildQty', 1)">+</div>
+            <span id="slChildQty">0</span>
+            <div class="quantity-control" onclick="changeQuantity('slChildQty', -1)">-</div>
+          </div>
+          
+          <label for="foreignerAdult">Foreigner Adult:</label>
+          <div class="quantity-container">
+            <div class="quantity-control" onclick="changeQuantity('foreignerAdultQty', 1)">+</div>
+            <span id="foreignerAdultQty">0</span>
+            <div class="quantity-control" onclick="changeQuantity('foreignerAdultQty', -1)">-</div>
+          </div>
+          
+          <label for="foreignerChild">Foreigner Child:</label>
+          <div class="quantity-container">
+            <div class="quantity-control" onclick="changeQuantity('foreignerChildQty', 1)">+</div>
+            <span id="foreignerChildQty">0</span>
+            <div class="quantity-control" onclick="changeQuantity('foreignerChildQty', -1)">-</div>
+          </div>
+          
+          <label for="infant">Infant:</label>
+          <div class="quantity-container">
+            <div class="quantity-control" onclick="changeQuantity('infantQty', 1)">+</div>
+            <span id="infantQty">0</span>
+            <div class="quantity-control" onclick="changeQuantity('infantQty', -1)">-</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <label for="timeSlots">Select Time Slots:</label>
+          <select id="timeSlots" name="timeSlots" multiple>
+            <option value="" data-peak="false"></option>
+            <!-- The options will be dynamically generated using JavaScript -->
+          </select>
+        </div>
+
+        <div id="pricingTable">
+          <!-- Pricing table will be generated using JavaScript -->
+        </div>
+      </form>
+    </div>
+    <div id="summaryTable" class="summary-table">
+      <!-- Summary table will be generated using JavaScript -->
+      
+    </div>
+
+    <br> 
+  </div>
+  <div>
+    <button onclick="redirectToPage()">Continue with purchase</button>
+  </div>
+
+  <script>
+    function redirectToPage() {
+      window.location.href = "cpurchase.html";
+    }
+  </script>
+  <script src="tickets.js"></script>
+</body>
+</html>
